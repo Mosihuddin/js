@@ -39,18 +39,39 @@
 // console.log(sum);
 
 
-function largestAge(numbers){
-    let largest =0;
-    for(i=0;i<numbers.length;i++){
-       let element = numbers[i];
-       if (element>largest){
-        largest= element;
+// function largestAge(numbers){
+//     let largest =0;
+//     for(i=0;i<numbers.length;i++){
+//        let element = numbers[i];
+//        if (element>largest){
+//         largest= element;
 
-       }
+//        }
        
        
+//     }
+//     return largest;
+// }
+// const age = [12,14,13,15,16];
+
+// const oldest = largestAge(age);
+
+ const names = ['abul', 'rafiq','kkabul','abul','malik','latif'];
+ function removeDuplicate(names){
+    const unique = [];
+    // for (let i =0; i<names.length;i++){
+    //     const element= names[i];
+    //     console.log(element);
+
+    // }
+    for (const element of names){
+        console.log (element);
+        if (unique.indexOf(element)==-1){
+            unique.push(element);
+        }
     }
-    return largest;
-}
-const age = [12,14,13,15,16];
-const oldest = largestAge(age);
+    return unique;
+ }
+ const uniqueNames = removeDuplicate(names);
+ console.log(uniqueNames);
+
