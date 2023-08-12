@@ -56,22 +56,33 @@
 
 // const oldest = largestAge(age);
 
- const names = ['abul', 'rafiq','kkabul','abul','malik','latif'];
- function removeDuplicate(names){
-    const unique = [];
+//  const names = ['abul', 'rafiq','kkabul','abul','malik','latif'];
+//  function removeDuplicate(names){
+//     const unique = [];
     // for (let i =0; i<names.length;i++){
     //     const element= names[i];
     //     console.log(element);
 
     // }
-    for (const element of names){
-        console.log (element);
-        if (unique.indexOf(element)==-1){
-            unique.push(element);
-        }
-    }
-    return unique;
- }
- const uniqueNames = removeDuplicate(names);
- console.log(uniqueNames);
+//     for (const element of names){
+//         console.log (element);
+//         if (unique.indexOf(element)==-1){
+//             unique.push(element);
+//         }
+//     }
+//     return unique;
+//  }
+//  const uniqueNames = removeDuplicate(names);
+//  console.log(uniqueNames);
 
+ const greetings = 'hello, how are you?';
+
+ function reverseString(text){
+    let reverse = '';
+    for(const letter of text){
+        //console.log(letter);
+        reverse = letter + reverse;
+    }
+ }
+ const reversed= reverseString(greetings);
+ console.log(reversed);
